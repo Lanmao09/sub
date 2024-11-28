@@ -42,6 +42,8 @@ dns:
 
   # 如果只在中国大陆境内使用，推荐删除 1.0.0.1 和 8.8.8.8
   default-nameserver:
+    - 1.0.0.1
+    - 8.8.8.8
     - 223.5.5.5
     - 119.29.29.29
   enhanced-mode: fake-ip
@@ -174,7 +176,7 @@ proxy-providers:
     url: "https://api.dler.io/sub?target=clash&url=订阅链接&include=%E9%A6%99%E6%B8%AF%7CHK&emoji=true&list=true&udp=true&tfo=true&scv=false&fdn=false&sort=false"
     interval: 3600
     path: ./Proxies/HKList.yaml
-	filter: '(港|HK|Hong Kong)' # 正则过滤后本组仅含HK节点
+    filter: '(港|HK|Hong Kong)' # 正则过滤后本组仅含HK节点
     health-check:
       enable: true
       interval: 300
@@ -184,7 +186,7 @@ proxy-providers:
     url: "https://api.dler.io/sub?target=clash&url=订阅链接&include=%E6%96%B0%E5%8A%A0%E5%9D%A1%7CSG&emoji=true&list=true&udp=true&tfo=true&scv=false&fdn=false&sort=false"
     interval: 3600
     path: ./Proxies/SGList.yaml
-	filter: '(新|SG|🇸🇬)' # 正则过滤后本组仅含HK节点
+    filter: '(新加坡|SG|🇸🇬)'
     health-check:
       enable: true
       interval: 300
@@ -194,7 +196,7 @@ proxy-providers:
     url: "https://api.dler.io/sub?target=clash&url=订阅链接&include=%E5%8F%B0%E6%B9%BE%7CTW&emoji=true&list=true&udp=true&tfo=true&scv=false&fdn=false&sort=false"
     interval: 3600
     path: ./Proxies/TWList.yaml
-	filter: '(台|🇹🇼)' # 正则过滤后本组仅含HK节点
+    filter: '(台|🇹🇼)'
     health-check:
       enable: true
       interval: 300
@@ -204,7 +206,7 @@ proxy-providers:
     url: "https://api.dler.io/sub?target=clash&url=订阅链接&include=%E6%97%A5%E6%9C%AC%7CJP&emoji=true&list=true&udp=true&tfo=true&scv=false&fdn=false&sort=false"
     interval: 3600
     path: ./Proxies/JPList.yaml
-	filter: '(日|🇯🇵)' # 正则过滤后本组仅含HK节点
+    filter: '(日|JP|🇯🇵)'
     health-check:
       enable: true
       interval: 300
@@ -214,7 +216,7 @@ proxy-providers:
     url: "https://api.dler.io/sub?target=clash&url=订阅链接&include=%E9%9F%A9%E5%9B%BD%7CKR&emoji=true&list=true&udp=true&tfo=true&scv=false&fdn=false&sort=false"
     interval: 3600
     path: ./Proxies/KRList.yaml
-	filter: '(韩|🇰🇷)' # 正则过滤后本组仅含HK节点
+    filter: '(韩|KR|🇰🇷)'
     health-check:
       enable: true
       interval: 300
@@ -224,7 +226,7 @@ proxy-providers:
     url: "https://api.dler.io/sub?target=clash&url=订阅链接&include=%E7%BE%8E%E5%9B%BD%7CUS&emoji=true&list=true&udp=true&tfo=true&scv=false&fdn=false&sort=false"
     interval: 3600
     path: ./Proxies/USList.yaml
-	filter: '(美|🇺🇸)' # 正则过滤后本组仅含HK节点
+    filter: '(美|US|🇺🇸)'
     health-check:
       enable: true
       interval: 300
