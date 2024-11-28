@@ -812,24 +812,6 @@ proxy-groups:
     filter: *proxy-filter-India
     use: *proxy-providers-use
   -
-    name: 🇬🇧 AIRPORT-EN
-    icon: *icon-United_Kingdom
-    type: select
-    filter: *proxy-filter-EN
-    use: *proxy-providers-use
-  -
-    name: 🇮🇪 AIRPORT-Ireland
-    icon: *icon-United_Kingdom
-    type: select
-    filter: *proxy-filter-Ireland
-    use: *proxy-providers-use
-  -
-    name: 🇷🇺 AIRPORT-RU
-    icon: *icon-Russia
-    type: select
-    filter: *proxy-filter-RU
-    use: *proxy-providers-use
-  -
     name: 🇨🇦 AIRPORT-Canada
     icon: *icon-Canada
     type: select
