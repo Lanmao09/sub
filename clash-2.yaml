@@ -14,10 +14,7 @@ BASE-DATA:
       - 🇺🇸 AIRPORT-US
       - 🇮🇳 AIRPORT-India
       - 🇬🇧 AIRPORT-EN
-      - 🇮🇪 AIRPORT-Ireland
-      - 🇷🇺 AIRPORT-RU
       - 🇨🇦 AIRPORT-Canada
-      - 🇫🇷 AIRPORT-FR
       - 🇦🇺 AIRPORT-AU
       - AIRPORT
     proxies-all-fdirect: &proxies-all-fdirect
@@ -31,10 +28,7 @@ BASE-DATA:
       - 🇺🇸 AIRPORT-US
       - 🇮🇳 AIRPORT-India
       - 🇬🇧 AIRPORT-EN
-      - 🇮🇪 AIRPORT-Ireland
-      - 🇷🇺 AIRPORT-RU
       - 🇨🇦 AIRPORT-Canada
-      - 🇫🇷 AIRPORT-FR
       - 🇦🇺 AIRPORT-AU
       - AIRPORT
     proxies-all-oforeign: &proxies-all-oforeign
@@ -46,10 +40,7 @@ BASE-DATA:
       - 🇺🇸 AIRPORT-US
       - 🇮🇳 AIRPORT-India
       - 🇬🇧 AIRPORT-EN
-      - 🇮🇪 AIRPORT-Ireland
-      - 🇷🇺 AIRPORT-RU
       - 🇨🇦 AIRPORT-Canada
-      - 🇫🇷 AIRPORT-FR
       - 🇦🇺 AIRPORT-AU
       - AIRPORT
     proxies-all-for-tiktok: &proxies-all-for-tiktok
@@ -63,10 +54,7 @@ BASE-DATA:
       - 🇰🇷 AIRPORT-Korea
       - 🇮🇳 AIRPORT-India
       - 🇬🇧 AIRPORT-EN
-      - 🇮🇪 AIRPORT-Ireland
-      - 🇷🇺 AIRPORT-RU
       - 🇨🇦 AIRPORT-Canada
-      - 🇫🇷 AIRPORT-FR
       - 🇦🇺 AIRPORT-AU
     proxies-all-for-openai: &proxies-all-for-openai
       - 🇰🇷 AIRPORT-Korea
@@ -74,9 +62,7 @@ BASE-DATA:
       - 🇺🇸 AIRPORT-US
       - 🇸🇬 AIRPORT-SG
       - 🇬🇧 AIRPORT-EN
-      - 🇮🇪 AIRPORT-Ireland
       - 🇨🇦 AIRPORT-Canada
-      - 🇫🇷 AIRPORT-FR
       - 🇦🇺 AIRPORT-AU
       - AIRPORT
     proxies-all-for-claude: &proxies-all-for-claude
@@ -85,9 +71,7 @@ BASE-DATA:
       - 🇰🇷 AIRPORT-Korea
       - 🇯🇵 AIRPORT-JP
       - 🇸🇬 AIRPORT-SG
-      - 🇮🇪 AIRPORT-Ireland
       - 🇨🇦 AIRPORT-Canada
-      - 🇫🇷 AIRPORT-FR
       - 🇦🇺 AIRPORT-AU
       - AIRPORT
     proxies-all-for-gemini: &proxies-all-for-gemini
@@ -96,9 +80,7 @@ BASE-DATA:
       - 🇰🇷 AIRPORT-Korea
       - 🇯🇵 AIRPORT-JP
       - 🇸🇬 AIRPORT-SG
-      - 🇮🇪 AIRPORT-Ireland
       - 🇨🇦 AIRPORT-Canada
-      - 🇫🇷 AIRPORT-FR
       - 🇦🇺 AIRPORT-AU
       - AIRPORT
     proxies-all-for-perplexity: &proxies-all-for-perplexity
@@ -107,9 +89,7 @@ BASE-DATA:
       - 🇰🇷 AIRPORT-Korea
       - 🇯🇵 AIRPORT-JP
       - 🇸🇬 AIRPORT-SG
-      - 🇮🇪 AIRPORT-Ireland
       - 🇨🇦 AIRPORT-Canada
-      - 🇫🇷 AIRPORT-FR
       - 🇦🇺 AIRPORT-AU
       - AIRPORT
 
@@ -134,12 +114,9 @@ BASE-DATA:
       proxy-filter-TW: &proxy-filter-TW '台湾|TW|Taiwan'
       proxy-filter-SG: &proxy-filter-SG '新加坡|SG|Singapore'
       proxy-filter-JP: &proxy-filter-JP '日本|JP|Japan'
-      proxy-filter-FR: &proxy-filter-FR '法国|FR|France'
       proxy-filter-AU: &proxy-filter-AU '澳大利亚|AU|Australia'
-      proxy-filter-Ireland: &proxy-filter-Ireland '爱尔兰|Ireland'
       proxy-filter-EN: &proxy-filter-EN '英国|UK|Britain|England'
       proxy-filter-Korea: &proxy-filter-Korea '韩国|KR|Korean'
-      proxy-filter-RU: &proxy-filter-RU '俄罗斯|RU|Russia'
       proxy-filter-US: &proxy-filter-US '美国|US|United States|America'
       proxy-filter-Canada: &proxy-filter-Canada '加拿大|CA|Canada'
       proxy-filter-India: &proxy-filter-India '印度|IN|India'
@@ -818,28 +795,10 @@ proxy-groups:
     filter: *proxy-filter-EN
     use: *proxy-providers-use
   -
-    name: 🇮🇪 AIRPORT-Ireland
-    icon: *icon-United_Kingdom
-    type: select
-    filter: *proxy-filter-Ireland
-    use: *proxy-providers-use
-  -
-    name: 🇷🇺 AIRPORT-RU
-    icon: *icon-Russia
-    type: select
-    filter: *proxy-filter-RU
-    use: *proxy-providers-use
-  -
     name: 🇨🇦 AIRPORT-Canada
     icon: *icon-Canada
     type: select
     filter: *proxy-filter-Canada
-    use: *proxy-providers-use
-  -
-    name: 🇫🇷 AIRPORT-FR
-    icon: *icon-France
-    type: select
-    filter: *proxy-filter-FR
     use: *proxy-providers-use
   -
     name: 🇦🇺 AIRPORT-AU
